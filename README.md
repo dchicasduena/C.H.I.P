@@ -1,2 +1,2 @@
 # C.H.I.P
-computarized hub intelligent program // discord bot
+computarized helper intelligent program // discord bot
