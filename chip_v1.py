@@ -2,7 +2,12 @@
 import discord
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
+
+NOTHING = "Ypu have nothing to do right now. Want to add something?"
+TO_DO_LEN = 100
+TO_DO = []
 
 client = discord.Client()
 TOKEN = os.getenv('TOKEN', None)
@@ -16,7 +21,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
-
+    if message.content.startswith('hello'):
+        await message.channel.send('Hello david!')
+        
+    
 client.run(TOKEN)
